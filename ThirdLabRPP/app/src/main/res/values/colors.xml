@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorBackground">#EBD4C8</color>
+    <color name="colorWhite">#FAFAFA</color>
+    <color name="colorDarkNude">#EE9C6C</color>
+    <color name="colorNude">#f5b994</color>
+    <color name="colorDarkGrey">#4D4C4C</color>
+    <color name="colorPastelMint">#8e9cb2</color>
+    <color name="colorPastelDarkMint">#7a879b</color>
+    <color name="colorBackgroundGrey">#EDF1F3</color>
+</resources>

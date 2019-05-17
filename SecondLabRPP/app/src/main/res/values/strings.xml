@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">SecondLab</string>
+    <string name="ss_temp">hello</string>
+    <string name="info_url">https://raw.githubusercontent.com/wesleywerner/ancient-tech/02decf875616dd9692b31658d92e64a20d99f816/src/data/techs.ruleset.json</string>
+    <string name="img_url">https://raw.githubusercontent.com/wesleywerner/ancient-tech/02decf875616dd9692b31658d92e64a20d99f816/src/images/tech/</string>
+</resources>
