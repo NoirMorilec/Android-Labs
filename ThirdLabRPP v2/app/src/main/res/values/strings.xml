@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ThirdLab</string>
+    <string name="main_get_information">Get information</string>
+    <string name="main_add_another_student">add another student</string>
+    <string name="main_replace_with_ivan_ivanov">replace with Ivan Ivanov</string>
+    <string name="item_name">ФИО</string>
+    <string name="item_id">Айди</string>
+    <string name="item_date">Дата</string>
+</resources>

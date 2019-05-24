@@ -39,17 +39,15 @@ public class MainActivity extends AppCompatActivity {
 
         if (list.isEmpty()) {
             for (int i = 0; i < 5; i++) {
-                App.Student student = new App.Student();
-                student.name = names[i];
-                student.id = i;
-                student.date = new Date().toString();
+                String[] separatedFio = names[new Random().nextInt(3)].split(" ");
+                App.Student student = new App.Student(i,separatedFio[0],separatedFio[1],separatedFio[2], new Date().toString());
                 list.add(student);
                 sd.insert(student);
                 Log.v("ADD", student.name);
             }
         }
 
-        first = findViewById(R.id.first_button);
+        first = (Button) findViewById(R.id.first_button);
         first.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -59,16 +57,12 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        second = findViewById(R.id.second_button);
+        second = (Button) findViewById(R.id.second_button);
         second.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Random rnd = new Random(System.currentTimeMillis());
-                int number = rnd.nextInt(4 + 1);
-                App.Student student = new App.Student();
-                student.name = names[number];
-                student.id = list.size() + 1;
-                student.date = new Date().toString();
+                String[] separatedFio = names[new Random().nextInt(3)].split(" ");
+                App.Student student = new App.Student(list.size(),separatedFio[0],separatedFio[1],separatedFio[2], new Date().toString());
                 list.add(student);
                 sd.insert(student);
                 Toast toast = Toast.makeText(getApplicationContext(),
@@ -78,12 +72,12 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        third = findViewById(R.id.third_button);
+        third = (Button) findViewById(R.id.third_button);
         third.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 App.Student student = list.get(list.size() - 1);
-                student.name = "Иванов Иван Иванович";
+                student.second_name = "Иван";
                 sd.update(student);
 
             }
