@@ -2,18 +2,18 @@ package com.example.verylonglist.parser;
 
 public class StringToIntParser {
 
-    public static String[] hundreds = {" ","one hundred " , "two hundred ", "three hundred ", "four hundred ", "five hundred ", "six hundred ", "seven hundred ", "eight hundred ", "nine hundred "};
-    public static String[] decades = {" ","ten" , "twenty ", "thirty ", "forty ", "fifty ", "sixty ", "seventy ", "eighty ", "ninety "};
-    public static String[] thousands = {" ","one thousand " , "two thousand ", "three thousand ", "four thousand ", "five thousand ", "six thousand ", "seven thousand ", "eight thousand ", "nine thousand "};
-    public static String[] tenDecades = {" ","eleven ", "twelve ","thirteen ","fourteen ","fifteen ","sixteen ","seventeen ","eighteen ","nineteen "};
-    public static String[] numerals = {" "," one ","two "," three "," four "," five "," six "," seven "," eight ","nine "};
+    public static String[] hundreds = {" ","сто " , "двести ", "триста ", "четыреста ", "пятьсот ", "шестьсот ", "семьсот ", "восемьсот ", "девятьсот "};
+    public static String[] decades = {" ","десять" , "двадцать ", "тридцать ", "сорок ", "пятьдесят ", "шестьдесят ", "семьдесят ", "восемьдесят ", "девяносто "};
+    public static String[] thousands = {" ","тысяча " , "две тысячи ", "три тысячи ", "четыре тысячи ", "пять тысяч ", "шесть тысяч ", "семь тысяч ", "восемь тысяч ", "девять тысяч "};
+    public static String[] tenDecades = {" ","одиннадцать ", "двенадцать ","тринадцать ","четырнадцать ","пятнадцать ","шестнадцать ","семнадцать ","восемнадцать ","девятнадцать "};
+    public static String[] numerals = {" "," один ","два "," три "," четыре "," пять "," шесть "," семь "," восемь ","девять "};
 
     public static int numlenghth;
 
     public static String getParsedString(int number){
         numlenghth = Integer.toString(number).length();
 
-        if(number == 1000000) return "One Million";
+        if(number == 1000000) return "миллион";
 
         int hundth = (number/100000)%10;
         int thDec = (number/10000)%10;
