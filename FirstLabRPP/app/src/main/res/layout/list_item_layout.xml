@@ -12,7 +12,7 @@
         android:layout_marginEnd="@dimen/dimen_50dp"
         android:layout_marginRight="@dimen/dimen_50dp"
         android:contentDescription="@string/string_icon"
-        android:src="@drawable/smile" />
+        android:src="@drawable/smile"/>
 
     <TextView
         android:id="@+id/idTextView"

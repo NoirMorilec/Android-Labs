@@ -3,6 +3,7 @@ package com.example.verylonglist;
 public class Item {
     public int id;
     public String color;
+    public int idImage;
 
     public Item() {
     }
@@ -11,9 +12,10 @@ public class Item {
         this.id = id;
     }
 
-    public Item(int id, String color) {
+    public Item(int id, String color, int idImage) {
         this.id = id;
         this.color = color;
+        this.idImage = idImage;
     }
 
     public int getId() {
@@ -30,5 +32,9 @@ public class Item {
 
     public void setColor(String color) {
         this.color = color;
+    }
+
+    public int getIdImage() {
+        return idImage;
     }
 }

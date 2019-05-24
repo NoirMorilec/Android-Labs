@@ -24,13 +24,14 @@ public class LabRecyclerViewAdapter extends RecyclerView.Adapter<LabRecyclerView
     public class ViewHolder extends RecyclerView.ViewHolder{
 
         private TextView idTextView;
-        private ImageView idImag;
+        private ImageView idImage;
         private LinearLayout linearLayout;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             idTextView = itemView.findViewById(R.id.idTextView);
             linearLayout = itemView.findViewById(R.id.itemLinearLayout);
+            idImage = itemView.findViewById(R.id.imageView);
         }
     }
 
@@ -52,6 +53,7 @@ public class LabRecyclerViewAdapter extends RecyclerView.Adapter<LabRecyclerView
         if(itemList.get(i).color.equals("White")) viewHolder.linearLayout.setBackgroundColor(context.getResources().getColor(R.color.colorWhite));
         else viewHolder.linearLayout.setBackgroundColor(context.getResources().getColor(R.color.colorGrey));
         viewHolder.idTextView.setText(StringToIntParser.getParsedString(item.getId()));
+        viewHolder.idImage.setImageResource(item.getIdImage());
     }
 
     @Override
