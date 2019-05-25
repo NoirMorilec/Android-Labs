@@ -14,7 +14,7 @@ public class InformationActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_information);
 
-        informationList = (ListView) findViewById(R.id.informationList);
+        informationList = findViewById(R.id.informationList);
         App.StudentDatabase sb = App.getInstance().getStudentDatabase();
         final App.StudentDao sd = sb.studentDao();
         final List<App.Student> list = sd.getAll();

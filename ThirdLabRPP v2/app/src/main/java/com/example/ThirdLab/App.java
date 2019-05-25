@@ -50,10 +50,10 @@ public class App extends Application {
         public String patronymic;
         public String date;
 
-        public Student(long id, String name, String second_name, String patronymic, String date) {
+        public Student(long id, String second_name, String name , String patronymic, String date) {
             this.id = id;
-            this.name = name;
             this.second_name = second_name;
+            this.name = name;
             this.patronymic = patronymic;
             this.date = date;
         }

@@ -26,9 +26,9 @@ public class StudentAdapter extends ArrayAdapter<App.Student> {
 
         View view = inflater.inflate(this.layout, parent, false);
 
-        TextView idView = (TextView) view.findViewById(R.id.id);
-        TextView nameView = (TextView) view.findViewById(R.id.name);
-        TextView dateView = (TextView) view.findViewById(R.id.date);
+        TextView idView = view.findViewById(R.id.id);
+        TextView nameView = view.findViewById(R.id.name);
+        TextView dateView = view.findViewById(R.id.date);
         App.Student student = students.get(position);
         String id = 1 + student.id+". ";
         idView.setText(id);
