@@ -67,7 +67,7 @@ public class MainActivity extends AppCompatActivity {
                 int number = rnd.nextInt(4 + 1);
                 App.Student student = new App.Student();
                 student.name = names[number];
-                student.id = list.size() + 1;
+                student.id = list.size();
                 student.date = new Date().toString();
                 list.add(student);
                 sd.insert(student);
